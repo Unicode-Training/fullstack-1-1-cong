@@ -1,0 +1,240 @@
+# Fullstack Web
+
+## Kiến thức cần phải học
+
+- Front-End: Xử lý giao diện, tương tác giữa người dùng với máy chủ
+- Back-End: Xử lý các logic nghiệp vụ và dữ liệu
+
+User => Gửi yêu cầu thông qua giao diện (Front-End) => Back-End tiếp nhận yêu cầu => Xử lý với CSDL => Trả về Front-End
+
+Lưu ý với Front-End
+
+HTML, CSS, JavaScript ==> Gửi cho Back-End ghép giao diện
+
+==> Cách làm cũ (Server Side Rendering)
+
+## HTTP
+
+- Để client có thể giao tiếp được với server và ngược lại => Sử dụng giao thức HTTP
+- Gửi yêu cầu bằng HTTP => HTTP Request
+- Gửi phản hồi bằng HTTP => HTTP Response
+
+Cấu tạo HTTP Request
+
+- URL: Địa chỉ gửi yêu cầu
+- Method: Phương thức gửi yêu cầu (GET, POST, PUT, PATCH, DELETE)
+- Headers: Thông tin đi kèm được gửi từ client lên server
+- Body: Nội dung cần gửi lên server
+
+Cấu tạo HTTP Response
+
+- Status: Trạng thái
+- Headers: Thông tin đi kèm từ server trả về
+- Body: Nội dung phản hồi
+
+Lưu ý: HTTP là giao thức không liên tục
+
+## Cách website hoạt động
+
+- B1: Người dùng gõ tên miền lên thành trình duyệt
+- B2: Trình duyệt sẽ gửi yêu cầu tới máy chủ phân giải tên miền (DNS Server)
+- B3: Máy chủ phân giải tên miền trả về địa chỉ IP cho trình duyệt
+- B4: Trình duyệt sẽ gửi yêu cầu tới IP của máy chủ
+- B5: Máy chủ sẽ trả về nội dung cho trình duyệt
+
+Lưu ý: Từ lần gửi yêu cầu thứ 2 trở đi => Trình duyệt sẽ không thông qua DNS Server
+
+## Ngôn ngữ đánh dấu HTML
+
+- Cấu tạo bởi các thẻ
+- Rất nhiều thẻ nhưng mà chúng ta chỉ cần học khoảng 30 thẻ
+
+### Nguyên tắc khi viết HTML
+
+- Mở và đóng thẻ theo đúng thứ tự
+- Các thẻ html có thể lồng nhau nhưng phải đúng thứ tự đóng mở
+- Thẻ block phải bọc thẻ inline (Trừ thẻ a)
+
+### Thẻ inline và block
+
+1. Inline
+
+- Chiều rộng mặc định của thẻ inline theo nội dung của thẻ
+- Các thẻ inline đứng cạnh nhau sẽ nằm trên 1 hàng
+- Không thay đổi được width, height của thẻ inline
+
+2. Block
+
+- Chiều rộng mặc định theo thẻ cha
+- Luôn ở hàng mới
+- Thay đổi được width, height
+
+### Thẻ đầy đủ và thẻ tự đóng
+
+1. Thẻ đầy đủ
+
+Có đủ mở và đóng thẻ
+
+```
+<tenthe thuoctinh1 = "giatri1">
+Nội dung
+</tenthe>
+```
+
+2. Thẻ tự đóng
+
+Chỉ có mở thẻ
+
+```
+<tenthe thuoctinh1="giatr1" />
+```
+
+### Danh sách các thẻ block
+
+1. Thẻ heading: Thể hiện tiêu đề trên trang web cần nhấn mạnh
+
+```
+<h1>Nội dung</h1>
+<h2>Nội dung</h2>
+<h3>Nội dung</h3>
+<h4>Nội dung</h4>
+<h5>Nội dung</h5>
+<h6>Nội dung</h6>
+```
+
+Nguyên tắc
+
+- Chỉ dùng nó để nhấn mạnh tiêu đề
+- Không dựa vào giao diện để quyết định dùng thẻ heading nào, mà dựa vào mục tiêu cần nhấn mạnh
+- Trên 1 trang web chỉ có 1 thẻ h1
+- Các thẻ heading phải liên tiếp, không được nhảy cóc
+
+==> Semantic
+
+Lợi ích khi viết đúng semantic
+
+- Bộ máy tìm kiếm đánh giá cao ==> Lên TOP
+- Lập trình viên trong đội ngũ sẽ dễ hiểu hơn
+- Hỗ trợ tốt cho các máy đọc dành cho người khiếm thị (Website Accessibility)
+
+2. Thẻ đoạn văn
+
+```
+<p>Nội dung đoạn văn</p>
+```
+
+Chỉ chứa văn bản và thẻ ngắt dòng, thẻ định dạng: đậm, nghiêng, gạch chân
+
+Để ngắt dòng trong đoạn văn dùng thẻ `<br/>`
+
+Lưu ý khi ngắt dòng: Chỉ áp dụng thẻ `<br/>` khi ngắt dòng văn bản (Không được áp dụng cho các trường hợp khác)
+
+3. Thẻ phân chia nội dung (div)
+
+- Không thay đổi định dạng của trang web
+- Dùng để nhóm các thẻ khác: Cả block và inline
+- Thường được dùng để phân chia bố cục của trang web (Có sự hỗ trợ của CSS)
+
+==> Áp dụng nhiều khi học sang CSS
+
+4. Thẻ định dạng danh sách
+
+4.1. Danh sách không sắp xếp
+
+```
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+```
+
+4.1. Danh sách có sắp xếp
+
+```
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ol>
+```
+
+5. Thẻ trích dẫn
+
+- Trích dẫn nội dung của 1 người hoặc nội dung trang web khác
+
+```
+<blockquote>
+    Nội dung trích dẫn
+</blockquote>
+```
+
+6. Thẻ gạch ngang (hr)
+
+```
+<hr />
+```
+
+7. Thẻ pre
+
+- Giữ nguyên định dạng từ server trả về
+
+```
+<pre>
+    Nội dung
+            abc
+</pre>
+```
+
+### HTML Entity
+
+- Thực thể của thẻ html
+- Quy ước:
+
+<: &lt;
+
+> : &gt;
+
+Tác dụng của HTML Entity:
+
+- Tránh lỗi bảo mật XSS
+- Thể hiện 1 số nội dung mà trình duyệt không cho phép
+
+### Các thẻ HTML5
+
+Mục đích: Semantic hơn
+
+## Danh sách thẻ inline
+
+1. Thẻ chèn liên kết
+
+Cú pháp
+
+```
+<a href="dia_chi_trang_web">Nội dung</a>
+```
+
+Thuộc tính
+
+- target: Mục tiêu cần mở (tab hiện tại, tab mới)
+- title: Tiêu đề khi người dùng trỏ chuột vào liên kết (Thuộc tính này xuất hiện ở tất cả các thẻ html)
+
+Đường dẫn tương đối: Bị phụ thuộc vào vị trí thư mục đang đứng
+
+duong-dan
+./duong-dan
+
+Đường dẫn tuyệt đối: Không bị phụ thuộc vào vị trí thư mục đang đứng
+
+/duong-dan
+//tenmien/duong-dan
+http://tenmien/duong-dan
+
+Quy tắc khi dùng dấu # trên url
+
+- Không tải lại trang (Xử lý ở client)
+- Tự động tìm đến thẻ html có id khớp với nội dung phía sau #
+- Nếu sau # không có nội dung -> Nhảy lên đầu trang
+- Nếu sau # có nội dung nhưng không tìm thấy id => Đứng im
