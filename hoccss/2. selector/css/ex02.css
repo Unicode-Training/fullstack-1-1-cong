@@ -1,0 +1,23 @@
+/* ul li a[target] {
+  color: red;
+} */
+/* ul li a[target="_blank"] {
+  color: red;
+} */
+
+/* ul li a[href^="https://unicode.vn"]
+{
+  color: red;
+} */
+
+/* ul li a[href*="unicode.vn"] {
+  color: red;
+} */
+
+/* ul li a[href$=".net"] {
+  color: red;
+} */
+
+ul li a[title~="Web"] {
+  color: red;
+}

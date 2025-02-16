@@ -1,0 +1,43 @@
+/* #title {
+  color: red;
+}
+.sub-title {
+  color: green;
+}
+h3 {
+  color: palevioletred;
+} */
+
+/* .box h3 {
+  color: red;
+}
+.content h3 {
+  color: green;
+} */
+/* .box > h2 {
+  color: green;
+}
+
+.menu > li > a {
+  color: red;
+} */
+
+/* .box .large.item {
+  color: red;
+} */
+
+/* p ~ h2 {
+  color: red;
+}
+p ~ .box h2 {
+  color: green;
+} */
+
+/* .box h2 + h2 {
+  color: red;
+} */
+
+.box,
+.content {
+  color: red;
+}

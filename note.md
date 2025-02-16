@@ -238,3 +238,187 @@ Quy tắc khi dùng dấu # trên url
 - Tự động tìm đến thẻ html có id khớp với nội dung phía sau #
 - Nếu sau # không có nội dung -> Nhảy lên đầu trang
 - Nếu sau # có nội dung nhưng không tìm thấy id => Đứng im
+
+2. Thẻ chèn hình ảnh
+
+```
+<img src="link-ảnh" title="Tiêu đề khi trỏ chuột" alt="Văn bản thay thế" width="chiều rộng" height="chiều cao"/>
+```
+
+3. Thẻ định dạng kiểu (span)
+
+- span: Không thay đổi định dạng của văn bản
+- Là thẻ non-semantic (Không có ý nghĩa)
+- Được dùng để hỗ trợ CSS và đáp ứng inline
+
+4. Thẻ định dạng văn bản
+
+```
+<b>In đậm</b>
+<i>In nghiêng</i>
+<u>Gạch chân</u>
+<s>Gạch ngang</s>
+```
+
+5. Thẻ định dạng công thức
+
+6. Table
+
+7. Form
+
+- Trong 1 trang web có thể có nhiều form
+- Trong 1 form = trường + nút gửi
+- Không được lồng nhau
+
+# Ngôn ngữ định dạng CSS
+
+- Tạo bố cục của trang web
+- Làm đẹp
+
+## 3 cách chèn css vào html
+
+1. Chèn trực tiếp trong trang html thông qua thẻ style (Internal CSS)
+
+```
+<style>
+    css
+</style>
+```
+
+2. Tách code css thành file .css (External)
+
+```
+<link href="link-css" rel="stylesheet" />
+```
+
+3. Viết CSS trực tiếp vào thẻ html thông qua thuộc tính style (Inline css)
+
+## Cách đặt tên class, id
+
+- id: Chỉ có 1
+- class: Có thể có nhiều
+
+* Sử dụng danh từ để đặt tên class, id
+* Dùng Tiếng Anh
+* Chấp nhận: chữ cái, gạch ngang, gạch dưới, 1 số ký tự đặc biệt
+* Không được bắt đầu bằng số
+
+```
+<div class="container container-lg" id="main">
+    <h1 class="title">Học lập trình không khó</h1>
+    <p class="text">
+        Nội dung
+    </p>
+</div>
+```
+
+- Thường sẽ đặt class cho thẻ html
+- Dùng id trong 1 số trường hợp sau:
+
+* Can thiệp js
+* Tăng độ ưu tiên
+
+## Cấu trúc CSS
+
+```css
+selector1 {
+  thuoctinh1: value1;
+  thuoctinh2: value2;
+  thuoctinh3: value3;
+  thuoctinh4: value4;
+}
+
+selector2 {
+  thuoctinh1: value1;
+  thuoctinh2: value2;
+  thuoctinh3: value3;
+  thuoctinh4: value4;
+}
+```
+
+## Comment CSS
+
+```css
+/*
+Nội dung comment
+*/
+```
+
+## Selector
+
+1. Selector cơ bản
+
+- id --> #id
+- class -> .class
+- tagname -> tagname
+
+2. Selector kết hợp
+
+2.1. Kết hợp nằm trong
+
+```
+selector1 selector2 selector3 {
+
+}
+```
+
+2.2. Kết hợp cha con
+
+```
+selector1 > selector2 > selector3 {
+
+}
+```
+
+2.3. Kết hợp cùng cấp
+
+```
+selector1selector2selector3 {
+
+}
+```
+
+Lưu ý:
+
+- Không quan trọng thứ tự
+- Nếu trong danh sách selector có tagname --> Đặt tagname ở đầu
+
+  2.3. Kết hợp ngang hàng
+
+```
+selector1 ~ selector2 {
+
+}
+```
+
+Lưu ý:
+
+- selector2 phải đứng sau selector1
+- selector2 và selector1 phải cùng thuộc 1 cha
+
+  2.4. Kết hợp ngang hàng liền kề
+
+```
+selector1 + selector2 {
+}
+```
+
+2.5. Kết hợp kế thừa
+
+```
+selector1, selector2, selector3 {
+
+}
+```
+
+2.6. Attribute Selector
+
+tenthe[thuoctinh] --> Chọn thẻ có thuộc tính
+
+tenthe[thuoctinh="giatri"] --> Chọn thẻ có thuộc tính khớp với giá trị
+
+tenthe[thuoctinh^="giatri"] --> Chọn thẻ có thuộc tính bắt đầu bằng giá trị
+
+tenthe[thuoctinh*="giatri"] --> Chọn thẻ có thuộc tính chứa nội dung
+
+tenthe[thuoctinh^="giatri"] --> Chọn thẻ có thuộc tính kết thúc bằng giá trị
