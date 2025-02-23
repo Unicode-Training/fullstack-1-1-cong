@@ -1,0 +1,48 @@
+/* h1:hover {
+  color: red;
+}
+h1:active {
+  color: red;
+}
+button:focus {
+  background: red;
+}
+input:focus {
+  background: yellow;
+}
+input:focus::placeholder {
+  color: red;
+}
+h1:focus {
+  color: blueviolet;
+} */
+
+/* input:checked + span {
+  color: red;
+}
+input:disabled + span {
+  color: gray;
+}
+input:disabled:checked + span {
+  font-style: italic;
+} */
+
+/* ul li:first-child {
+  color: red;
+}
+ul li:last-child {
+  color: green;
+}
+ul li:first-of-type {
+  color: red;
+}
+ul li:last-of-type {
+  color: green;
+} */
+
+/* ul li:nth-of-type(2n + 1) {
+  color: red;
+} */
+input:valid + span {
+  color: red;
+}

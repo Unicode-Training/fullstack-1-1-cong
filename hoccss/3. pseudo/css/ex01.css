@@ -1,0 +1,19 @@
+h1::before {
+  content: "a";
+}
+h1::after {
+  content: "b";
+}
+p::first-line {
+  color: red;
+}
+p::first-letter {
+  color: blueviolet;
+}
+p::selection {
+  background: black;
+  color: yellow;
+}
+input::placeholder {
+  color: red;
+}

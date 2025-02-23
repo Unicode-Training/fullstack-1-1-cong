@@ -1,0 +1,12 @@
+body {
+  height: 2000px;
+  /* background-color: green;
+  background-image: url("https://fastly.picsum.photos/id/235/536/354.jpg?hmac=onhPj3Mzkk96eq4ytOPUtaggiNzFe55JpxUm8-LsI-I");
+  background-repeat: no-repeat;
+  background-position: 0 0; */
+  /* background-size: contain; */
+  /* background-attachment: fixed; */
+  background: green
+    url("https://fastly.picsum.photos/id/235/536/354.jpg?hmac=onhPj3Mzkk96eq4ytOPUtaggiNzFe55JpxUm8-LsI-I")
+    no-repeat 0 0 / cover fixed;
+}

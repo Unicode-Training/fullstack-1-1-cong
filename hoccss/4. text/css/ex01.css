@@ -1,0 +1,96 @@
+/* h2 {
+  color: rgb(255, 129, 26);
+}
+h3 {
+  color: rgba(255, 129, 26, 0.514);
+}
+h2:hover {
+  color: transparent;
+} */
+/* body {
+  color: red;
+} */
+/* html {
+  font-size: 17px;
+}
+body {
+  font-size: 18px;
+}
+.content {
+  font-size: 1.2em;
+}
+p {
+  font-size: 1.2rem;
+} */
+/* 
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 2.4rem;
+} */
+
+/* p {
+  font-size: 20px;
+  line-height: 1.5;
+} */
+@font-face {
+  font-family: "Svn Fontbox";
+  src: url("../fonts/SVN-Fontbox-Boathouse-Filled.otf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+body {
+  /* font-family: Arial, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+h2 {
+  font-family: "Svn Fontbox";
+}

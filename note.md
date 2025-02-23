@@ -422,3 +422,105 @@ tenthe[thuoctinh^="giatri"] --> Chọn thẻ có thuộc tính bắt đầu bằ
 tenthe[thuoctinh*="giatri"] --> Chọn thẻ có thuộc tính chứa nội dung
 
 tenthe[thuoctinh^="giatri"] --> Chọn thẻ có thuộc tính kết thúc bằng giá trị
+
+## Pseudo
+
+1. Pseudo Element
+
+selector::tenphantu {
+
+}
+
+- before --> Phần tử phía trước nội dung
+- after --> Phần tử phía sau nội dung
+- first-line --> Dòng đầu tiên của văn bản
+- first-letter --> Ký tự đầu tiên của văn bản
+- selection --> Lựa chọn
+- placeholder --> Phần tử tạm của form
+
+Lưu ý: before, after chỉ hoạt động khi có thuộc tính content
+
+2. Pseudo Class
+
+selector:tenseudo {
+
+}
+
+- hover, active, focus (Chỉ áp dụng với form)
+- checked, disabled
+- first-child, last-child
+- first-of-type, last-of-type
+- nth-child(number)
+- nth-of-type(number)
+
+## Các thuộc tính định dạng văn bản
+
+1. Thuộc tính color
+
+- Thay đổi màu của văn bản
+- Thay đổi opacity của màu
+- Màu trong suốt: transparent
+- Thuộc tính kế thừa
+
+2. Thuộc tính font-size
+
+- Thay đổi cỡ chữ của văn bản
+- font-size: giatri + donvi
+
+* px, pt --> Đơn vị tuyệt đối
+* em --> Tương đối, tỷ lệ với font-size của phần tử cha
+* rem --> Tương đối, tỷ lệ với mặc định trình duyệt
+
+3. Thuộc tính line-height
+
+- Thay đổi chiều cao dòng của văn bản (Giãn dòng)
+- line-height: giatri (Tỷ lệ với font-size của chính nó)
+
+4. Thuộc tính font-family
+
+- Thay đổi font chữ cho văn bản
+- font-family: tenfont1, tenfont2, tenfont3,...
+
+5. Một số thuộc tính khác
+
+- text-decoration: none | underline | overline | line-through
+- text-transform: none | lowercase | uppercase | capitalize
+- letter-spacing --> Thay đổi khoảng cách giữa các ký tự
+- word-spacing --> Thay đổi khoảng cách giữa các từ
+- word-wrap --> Tự động xuống dòng khi bị tràn nội dung
+- text-align --> Căn chỉnh văn bản theo chiều ngang
+
+Lưu ý:
+
+- Có thể dùng text-align để căn chỉnh các thẻ inline
+- Thẻ text-align chỉ có tác dụng khi ở thẻ block
+
+## Thuộc tính background
+
+- background-color: Thay đổi màu nền
+- background-image: Thay đổi ảnh nền
+- background-repeat: Thay đổi chế độ lặp
+- background-position: Vị trí ảnh nền
+- background-size: Kích thước của ảnh nền
+- background-attachment: Cố định ảnh nền khi kéo thanh cuộn
+- background: color image repeat position / size attachment
+
+## Thuộc tính border
+
+border = width + style + color
+
+- border-width
+- border-style --> none | solid | dashed | dotted | double
+- border-color
+
+Thuộc tính mở rộng
+
+- border-{side}-width
+- border-{side}-color
+- border-{side}-style
+
+size: top, left, right, bottom
+
+Thuộc tính rút gọn: border: width style color
+
+border-{side}: width style color
