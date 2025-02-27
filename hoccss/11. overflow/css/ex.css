@@ -1,0 +1,9 @@
+.box {
+  width: 200px;
+  height: 600px;
+  border: 1px solid red;
+  overflow: auto;
+}
+.box p {
+  width: 300px;
+}

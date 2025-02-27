@@ -524,3 +524,54 @@ size: top, left, right, bottom
 Thuộc tính rút gọn: border: width style color
 
 border-{side}: width style color
+
+## Thuộc tính border-radius
+
+- Bo góc
+- border-radius: kichthuoc
+
+Nếu là hình vuông, border-radius >= 50% ==> Hình tròn
+
+Tạo hình có bo góc ôm 2 bên --> border-radius >= chiều cao
+
+## Width-height
+
+- Chỉ áp dụng với các thẻ block (Trừ những thẻ inline replaced: img, input, iframe,...)
+- Đơn vị:
+
+* % --> Tỷ lệ với kích thước của thẻ cha
+* vh --> viewport height --> Tỷ lệ khung nhìn chiều cao của trình duyệt
+* vw --> viewport width --> Tỷ lệ với khung nhìn chiều rộng của trình duyệt
+
+Thuộc tính mở rộng
+
+- min-width: Chiều rộng nhỏ nhất
+- max-width: Chiều rộng lớn nhất
+- min-height: Chiều cao nhỏ nhất
+- max-height: Chiều cao lớn nhất
+
+## padding-margin
+
+- padding: phần đệm nằm giữa border và content
+- margin: phần lề nằm ngoài border
+- padding, margin chỉ hoạt động top và bottom nếu là block
+- padding, margin nếu là đơn vị phần trăm --> Tỷ lệ theo width của thẻ cha
+- padding không có giá trị âm
+- margin có giá trị âm và auto
+
+Các thuộc tính mở rộng
+
+- padding-left
+- padding-right
+- padding-top
+- padding-bottom
+
+- margin-left
+- margin-right
+- margin-top
+- margin-bottom
+
+## Overflow
+
+- Xử lý khi nội dung bị tràn
+- overflow: visible|hidden|auto|scroll

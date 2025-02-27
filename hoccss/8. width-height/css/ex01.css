@@ -1,0 +1,25 @@
+/* .box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+}
+.content {
+  width: 50vw;
+  height: 200px;
+  border: 2px solid green;
+}
+.btn {
+  border: 1px solid red;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+} */
+
+.image {
+  border: 1px solid red;
+  width: 300px;
+  /* height: 700px; */
+}
+.image img {
+  max-width: 100%;
+}
