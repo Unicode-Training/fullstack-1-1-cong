@@ -575,3 +575,69 @@ Các thuộc tính mở rộng
 
 - Xử lý khi nội dung bị tràn
 - overflow: visible|hidden|auto|scroll
+
+## Flex (Flexible box module)
+
+1. Trục
+
+- Main: Trục chính
+- Cross: Trục vuông góc
+
+2. Thành phần
+
+- Flex container
+- Flex item
+
+3. Các thuộc tính flex container
+
+- display: flex --> Kích hoạt flexbox
+- flex-direction: --> Chọn hướng cho trục chính (Mặc định nằm ngang)
+
+* row
+* row-reverse
+* column
+* column-reverse
+
+- justify-content --> Điều khiển các item theo hướng của trục chính
+
+* flex-start
+* flex-end
+* center
+* space-around
+* space-between
+* space-evenly
+
+- align-items --> Điều khiển các item theo hướng song song với trục cross
+
+* stretch --> Kéo dãn các item theo hướng của trục cross
+* flex-start
+* center
+* flex-end
+* baseline
+
+- flex-wrap: --> wrap các item nếu kích thước > container
+
+* nowrap
+* wrap
+* wrap-reverse
+
+- align-content --> Căn chỉnh hàng và cột
+
+* stretch
+* flex-start
+* center
+* flex-end
+* space-around
+* space-between
+* space-evenly
+
+- gap: Tạo khoảng cách giữa các item
+
+4. Các thuộc tính trong nhóm flex item
+
+- flex-grow: number --> giãn đều các item để lấp đầy khoảng cách còn trống trong container
+- flex-shrink: number --> co lại nếu tổng kích thước các item > container
+- flex-basis: kichthuoc --> Thiết lập kích thước cho item
+- flex: grow shrink basis
+- order: Sắp xếp các item
+- align-self: Các giá trị giống align-items
