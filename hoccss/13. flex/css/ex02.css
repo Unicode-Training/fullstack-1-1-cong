@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.posts-container {
+  display: flex;
+}
+.posts-container .column-small {
+  width: 25%;
+  padding: 0 10px;
+}
+.posts-container .column-big {
+  width: 50%;
+  padding: 0 10px;
+}
+.posts {
+  padding: 30px 0;
+}
+.posts .post-list .post-item {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.posts .post-list .post-item .post-image {
+  width: 40%;
+}
+.posts .post-list .post-item h2 {
+  font-size: 1.4rem;
+  width: 60%;
+}
+.posts .post-feature h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  padding: 10px 0;
+}
+.posts .post-feature p {
+  padding: 10px 0;
+}
+.posts .post-feature ul {
+  list-style: inside;
+  font-weight: bold;
+}
+.posts .post-list.one-column .post-item {
+  display: block;
+}
+.posts .post-list.one-column .post-item .post-image {
+  width: 100%;
+}
+.posts .post-list.one-column .post-item h2 {
+  padding: 10px 0;
+}
+.posts .post-list.one-column .post-item {
+  border: 0;
+}

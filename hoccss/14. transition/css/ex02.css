@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 400px;
+  margin: 30px auto;
+  text-align: center;
+}
+.text {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+}
+.text::before {
+  content: "";
+  display: block;
+  background: red;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s linear;
+}
+.text:hover::before {
+  width: 100%;
+}

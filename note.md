@@ -641,3 +641,28 @@ Các thuộc tính mở rộng
 - flex: grow shrink basis
 - order: Sắp xếp các item
 - align-self: Các giá trị giống align-items
+
+## Transition
+
+- Tạo hiệu ứng di chuyển
+- Chỉ áp dụng với các thuộc tính css có giá trị là số
+
+Các thuộc tính
+
+- transition-property --> Chọn các thuộc tính muốn áp dụng hiệu ứng
+  Ví dụ: transition: color, border-color
+  Có thể dùng giá trị all để áp dụng tất cả thuộc tính
+
+- transition-duration --> Thiết lập thời gian hoàn thành chuyển động (s, ms)
+
+- transition-delay --> Thiết lập thời gian trễ trước khi hiệu ứng chuyển động
+
+- transition-timing-function --> Thiết lập tốc độ của chuyển động theo quãng đường
+
+* ease --> Chậm, nhanh, chậm
+* ease-in --> Chậm, nhanh
+* ease-out --> Nhanh, chậm
+* ease-in-out --> Chậm, nhanh, chậm
+* linear --> Đều
+
+- transition: propery duration delay timing
