@@ -666,3 +666,62 @@ Các thuộc tính
 * linear --> Đều
 
 - transition: propery duration delay timing
+
+## Transform
+
+- Thay đổi hình dạng ban đầu của thẻ html
+- Xoay, Nghiêng, Di chuyển, phóng to, thu nhỏ
+
+Cú pháp: transform: giatri
+
+- rotate(angle) --> Xoay theo trục Z (Có thể sử dụng thuộc tính rotate)
+- rotateX(angle) --> Xoay theo trục X (Nằm ngang)
+- rotateY(angle) --> Xoay theo trục Y (Nằm dọc)
+
+- scale(x,y) --> Phóng to, thu nhỏ theo 2 trục x, y (Có thể sử dụng thuộc tính scale)
+- scaleX(value) --> Phóng to, thu nhỏ theo trục X
+- scaleY(value) --> Phóng to, thu nhỏ theo trục Y
+
+- skew(angleX, angleX) --> Nghiêng theo trục x, y
+- skewX(angle) --> Nghiêng theo trục x
+- skewY(angle) --> Nghiêng theo trục Y
+
+- translate(x, y) --> Di chuyển ra khỏi vị trí ban đầu (Không làm thay đổi bố cục)
+- translateX(value) --> Di chuyển theo trục X
+- translateY(value) --> Di chuyển theo trục Y
+  Nếu dùng đơn vị phần trăm --> Tỷ lệ với width, height của chính nó
+
+Có thể sử dụng thuộc tính translate để thay thế cho transform: translate(x,y)
+
+## Animation
+
+- Tạo ra hiệu ứng cho trang web
+- Có 2 phần
+
+* keyframes
+* animation
+
+```css
+@keyframes ten-keyframe {
+  from {
+  }
+
+  tỷ lệ % {
+  }
+
+  to {
+  }
+}
+```
+
+from: Tương ứng với 0% theo duration của animation
+to: Tương ứng với 100% theo duration của animation
+
+Animation
+
+- animation-name: ten-keyframe
+- animation-duration: thoi-gian
+- animation-delay: thoi-gian-tre
+- animation-timing-function: tốc độ
+- animation-interation-count: solan (vô hạn = infinite)
+- animation: name duration delay timing count

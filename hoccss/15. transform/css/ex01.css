@@ -1,0 +1,25 @@
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.box span {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 100%;
+  translate: -100%;
+}
+.box:hover span {
+  /* transform: translateX(100%); */
+  /* rotate: -70deg; */
+  /* scale: 1.5 2; */
+}
