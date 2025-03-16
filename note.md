@@ -725,3 +725,94 @@ Animation
 - animation-timing-function: tốc độ
 - animation-interation-count: solan (vô hạn = infinite)
 - animation: name duration delay timing count
+
+## Responsive
+
+- Thiết kế web thích ứng
+- Dùng css để thay đổi giao diện dựa theo kích thước màn hình (width)
+- Dự án lớn dùng Adaptive (Phiên bản giao diện khác, nhận diện qua thiết bị)
+
+1. Breakpoint
+
+- Điểm dừng màn hình khiến giao diện thay đổi
+- Không có breakpoint bất bại cho mọi dự án
+- Breakpoint phổ biến (Tham khảo bootstrap, tailwind css)
+
+* 576px
+* 768px
+* 992px
+* 1200px
+* 1400px
+
+2. Media Queries
+
+- At-rule của CSS cho phép áp dụng breakpoint vào trang web
+- 2 trường phải: Desktop first, mobile first
+
+Desktop first
+
+```css
+selector {
+  thuoctinh: giatri;
+}
+
+@media screen and (max-width: 1399.98px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (max-width: 756.98px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+```
+
+Mobile first
+
+```css
+selector {
+  thuoctinh: giatri;
+}
+
+@media screen and (min-width: 576px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (min-width: 768px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (min-width: 992px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (min-width: 1200px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+@media screen and (min-width: 1400px) {
+  selector {
+    thuoctinh: giatri;
+  }
+}
+```
