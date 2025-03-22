@@ -816,3 +816,23 @@ selector {
   }
 }
 ```
+
+## Ngôn ngữ SCSS
+
+Cài đặt trình biên dịch
+
+npm i sass -g
+
+Câu lệnh biên dịch
+
+1. Biên dịch 1 file
+
+sass duong-dan-file-scss duong-dan-file-css --watch
+
+2. Biên dịch cả folder
+
+sass duong-dan-folder-scss:duong-dan-folder-css --watch
+
+3. Nén file css bằng scss
+
+sass duong-dan-file-scss duong-dan-file-css --style compressed

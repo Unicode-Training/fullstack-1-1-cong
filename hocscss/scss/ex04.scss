@@ -1,0 +1,46 @@
+//Kế thừa
+// .box {
+//   width: 1200px;
+//   margin: 0 auto;
+// }
+
+//placeholder
+// %box {
+//   width: 1200px;
+//   margin: 0 auto;
+// }
+// .products {
+//   background: green;
+//   @extend %box;
+// }
+// .posts {
+//   border: 1px solid red;
+//   @extend %box;
+// }
+
+//mixin
+@mixin section-base($width: 1200px, $spacer: 0) {
+  width: $width;
+  margin: $spacer auto;
+}
+@mixin center {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+.products {
+  background: green;
+  @include section-base(1300px);
+}
+.posts {
+  border: 1px solid red;
+  @include section-base(1200px, 30px);
+}
+
+@include center();
+
+.box {
+  @include center;
+}

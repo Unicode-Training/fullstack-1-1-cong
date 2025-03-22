@@ -1,0 +1,35 @@
+/*comment css*/
+.header {
+  padding: 30px 0;
+}
+.header .top-bar {
+  display: flex;
+  background: yellow;
+  color: #333;
+}
+.header .header-row {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-row .logo img {
+  max-width: 200px;
+  height: auto;
+}
+.header .header-row ul.menu > li > a {
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+.header .header-row ul.menu > li > a:hover {
+  color: red;
+}
+.header .header-row ul.menu > li > a:hover::before {
+  content: "";
+}
+.header .header-row ul.menu > li > a::before {
+  content: "";
+}
+.header .header-row ul.menu > li + li > a {
+  border-left: 0;
+}
+
+/*# sourceMappingURL=ex01.css.map */

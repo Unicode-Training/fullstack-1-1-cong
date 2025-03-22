@@ -1,0 +1,70 @@
+//Câu lệnh rẽ nhánh @if @else
+// Toán tử số học: +, -, *, /, % (Chia lấy dư)
+// Toán tử so sánh: >, <, >=, <=, ==, !=
+// Toán tử logic: and, or, not
+
+// $a: 3;
+// @if $a < 5 {
+//   .box {
+//     padding: 30px;
+//   }
+// } @else if $a < 10 {
+//   .column {
+//     width: 0;
+//   }
+// } @else {
+//   .box {
+//     background: red;
+//   }
+// }
+
+//Vòng lặp @for
+// @for $i from 1 through 10 {
+//   @if $i % 2 == 0 {
+//     .col-#{$i} {
+//       $value: $i * 10%;
+//       @if ($value == 100%) {
+//         width: 0;
+//       } @else {
+//         width: $value;
+//       }
+//     }
+//   }
+// }
+
+//Vòng lặp @while
+// $i: 1;
+// @while $i <= 10 {
+//   .col-#{$i} {
+//     width: $i * 10%;
+//   }
+//   $i: $i + 2;
+// }
+
+//Vòng lặp @each
+// $sizes: 20px 40px 60px 80px; //list
+// @each $size in $sizes {
+//   .col-#{$size} {
+//     width: $size;
+//   }
+// }
+
+// $sizes: (small 40px 300) (medium 60px 500) (large 80px 700);
+// @each $name, $size, $weight in $sizes {
+//   .col-#{$name} {
+//     width: $size;
+//     font-weight: $weight;
+//   }
+// }
+
+$sizes: (
+  //key: value,
+  small: 40px,
+  medium: 60px,
+  large: 80px
+); //Map
+@each $name, $size in $sizes {
+  .col-#{$name} {
+    width: $size;
+  }
+}

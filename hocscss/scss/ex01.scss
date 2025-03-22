@@ -1,0 +1,49 @@
+//Comment scss
+//Tất cả cú pháp của css đều áp dụng được trong scss
+//Các cú pháp css --> scss đều biên dịch
+/*comment css*/
+
+//Cú pháp lồng selector
+.header {
+  padding: 30px 0;
+  .top-bar {
+    display: flex;
+    background: yellow;
+    color: #333;
+  }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      img {
+        max-width: 200px;
+        height: auto;
+      }
+    }
+    ul {
+      &.menu {
+        > li {
+          > a {
+            text-decoration: none;
+            border-left: 1px solid #efefef;
+            &:hover {
+              color: red;
+              &::before {
+                content: "";
+              }
+            }
+            &::before {
+              content: "";
+            }
+          }
+
+          + li {
+            > a {
+              border-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

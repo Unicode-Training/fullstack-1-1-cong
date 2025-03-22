@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+
+.header {
+  padding: 30px 0;
+  background: yellow;
+}
+.header .header-row {
+  display: flex;
+  background: red;
+}
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .products {
+    display: flex;
+    flex-direction: row;
+  }
+  .products .product-item {
+    flex-basis: 25%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

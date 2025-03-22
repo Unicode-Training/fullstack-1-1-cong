@@ -1,0 +1,25 @@
+.products {
+  background: green;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.posts {
+  border: 1px solid red;
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.box .container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/*# sourceMappingURL=ex04.css.map */

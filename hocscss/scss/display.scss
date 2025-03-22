@@ -1,0 +1,44 @@
+$displayValues: none inline block inline-block grid inline-grid table table-cell
+  table-row flex inline-flex;
+$flexValues: row row-reverse column column-reverse;
+$justifyValues: flex-start flex-end center space-between space-around
+  space-evenly;
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+$utils: (
+  ".d-": (
+    display: $displayValues,
+  ),
+  ".flex-": (
+    flex-direction: $flexValues,
+  ),
+  ".justify-content-": (
+    justify-content: $justifyValues,
+  ),
+);
+@mixin utils($name: "") {
+  @each $key, $values in $utils {
+    $selector: $key;
+    @if ($name != "") {
+      $selector: $selector + $name + "-";
+    }
+    @each $property, $valueList in $values {
+      @each $value in $valueList {
+        #{$selector + $value} {
+          #{$property}: $value;
+        }
+      }
+    }
+  }
+}
+@include utils();
+@each $name, $width in $breakpoints {
+  @media screen and (min-width: $width) {
+    @include utils($name);
+  }
+}

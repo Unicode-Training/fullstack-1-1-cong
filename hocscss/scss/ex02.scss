@@ -1,0 +1,28 @@
+//Biến toàn cục
+$primary-color: red;
+$primaryColor: green;
+$size: 14;
+$family: Roboto, sans-serif;
+$status: true; //boolean
+$property: background-color;
+$columnName: ".col-3";
+body {
+  color: $primary-color;
+  background: $primaryColor;
+  font-size: #{$size + 2}px;
+  font-family: $family;
+}
+.header {
+  #{$property}: red;
+  $secondaryColor: yellow; //Biến cục bộ
+  background: $secondaryColor;
+  .header-row {
+    border: 1px solid $secondaryColor;
+  }
+}
+// .footer {
+//   background: $secondaryColor;
+// }
+#{$columnName} {
+  width: 50%;
+}

@@ -1,0 +1,26 @@
+@use "partials/reset";
+@use "partials/header";
+@use "partials/footer";
+@use "partials/mixin";
+// body {
+//   font-family: Roboto;
+//   color: header.$secondaryColor;
+// }
+
+// @include mixin.center;
+
+@include mixin.small-device {
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@include mixin.medium-device {
+  .products {
+    display: flex;
+    flex-direction: row;
+    .product-item {
+      flex-basis: calc(100% / 4);
+    }
+  }
+}

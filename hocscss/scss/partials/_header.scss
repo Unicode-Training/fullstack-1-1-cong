@@ -1,0 +1,11 @@
+@use "./variable" as v; //namespace
+@forward "./variable";
+$-headerColor: yellow; //private member
+.header {
+  padding: 30px 0;
+  background: $-headerColor;
+  .header-row {
+    display: flex;
+    background: v.$primaryColor;
+  }
+}
