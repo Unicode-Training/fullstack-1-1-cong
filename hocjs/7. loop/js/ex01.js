@@ -36,12 +36,47 @@ for (giatrikhoitao; dieukien; buocnhay) {
 
 //Bài tập: Tính giá trị biểu thức sau
 // s = 1 + 1*2 + 1*2*3 + ... + 1*2*3*...*n
-let n = 5;
-// s = 1 + 1*2 + 1*2*3 + 1*2*3*4 + 1*2*3*4*5
-let tmp = 1;
-let total = 0;
-for (let i = 1; i <= n; i++) {
-  tmp *= i;
-  total += tmp;
-}
-console.log(total);
+// let n = 5;
+// // s = 1 + 1*2 + 1*2*3 + 1*2*3*4 + 1*2*3*4*5
+// let tmp = 1;
+// let total = 0;
+// for (let i = 1; i <= n; i++) {
+//   tmp *= i;
+//   total += tmp;
+// }
+// console.log(total);
+
+//Kiểm tra 1 số xem có phải số nguyên tố không?
+// - Phải là số nguyên
+// - > 1
+// - Chỉ chia hết cho 1 và chính nó
+// let n = 5;
+// let isPrime = true; //Giả định là true
+// if (n % 1 !== 0 || n <= 1) {
+//   isPrime = false;
+// } else {
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       isPrime = false;
+//       // break; //Dừng vòng lặp
+//       i = n;
+//     }
+//   }
+// }
+// if (isPrime) {
+//   console.log(`${n} la so nguyen to`);
+// } else {
+//   console.log(`${n} khong la so nguyen to`);
+// }
+
+//-->Kỹ thuật đặt cờ hiệu (Cắm cờ)
+
+//Từ khóa break: Thoát vòng lặp
+//Từ khóa continue: Bỏ qua lần lặp
+
+// for (let i = 1; i <= 10; i++) {
+//   if (i === 5) {
+//     continue;
+//   }
+//   console.log(i);
+// }
